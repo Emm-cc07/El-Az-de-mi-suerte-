@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para As 💙</title>
 
+<style>
+body{
+    margin:0;
+    font-family: Arial;
+    background: linear-gradient(to bottom,#0a1f44,#1e3c72);
+    color:white;
+    text-align:center;
+}
+
+.login{
+    margin-top:100px;
+}
+
+input{
+    padding:10px;
+    border-radius:10px;
+    border:none;
+}
+
+button{
+    padding:10px 20px;
+    border-radius:10px;
+    border:none;
+    background:#4facfe;
+    color:white;
+}
+
+.contenido{
+    display:none;
+    padding:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    margin:20px auto;
+    padding:20px;
+    border-radius:20px;
+    max-width:600px;
+}
+img{
+    width:200px;
+    border-radius:20px;
+    margin:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login" id="login">
+    <h1>🔐 Solo para As</h1>
+    <p>Si sabes la frase… puedes entrar 💙</p>
+    <input type="password" id="pass">
+    <br><br>
+    <button onclick="entrar()">Entrar</button>
+    <p id="error"></p>
+</div>
+
+<div class="contenido" id="contenido">
+
+<h1>Para mi 04 💙</h1>
+
+<div class="card">
+<h2>Mi destino fue encontrarte, az</h2>
+
+<p>
+As…<br><br>
+
+Han pasado ya más de dos años desde aquel 25 de julio de 2023,  
+y puedo decir con toda seguridad que han sido los mejores años de mi vida.  
+
+Desde aquel primer peluche en Miniso, ese leoncito que terminó siendo tuyo,  
+hasta cada detalle, cada salida, cada risa… todo contigo se volvió especial.  
+
+Recuerdo cada cosa: el pingüinito, el zorro, el puerquito que tanto querías,  
+y todos los peluches que no solo eran regalos… eran pedacitos de mí para ti.  
+
+Pero si hay algo que quiero que nunca olvides, es esto:  
+durante estos últimos 25 días estuve pensando en ti todos los días.  
+
+Pensando en cómo sorprenderte,  
+en cómo hacerte feliz,  
+en cómo crear algo que demostrara todo lo que siento por ti.  
+
+Cada publicación, cada pista, cada acertijo…  
+fue hecho con amor, con dedicación, con esfuerzo,  
+solo para llegar a este momento.  
+
+Porque sí…  
+mi destino fue encontrarte, az.  
+
+Y si algo tengo claro,  
+es que voy a seguir esforzándome por ti  
+tanto como lo he hecho hasta ahora…  
+y mucho más.  
+
+Porque tú eres mi pequeño gran infinito,  
+mi siempre para siempre,  
+mi suerte…  
+mi as.  
+
+Te amo 💙
+</p>
+</div>
+
+<div class="card">
+<h2>Sobre ti 💙</h2>
+<p>
+Color favorito: Azul 💙<br>
+Le gusta: Leer y pintar 🎨<br>
+Comida favorita: Espagueti con pollo crujiente 🍝<br>
+Cantante favorito: Morad 🎶<br>
+Flores favoritas: Gerberas 🌸<br>
+</p>
+</div>
+
+<div class="card">
+<h2>Nuestra historia</h2>
+<p>
+Desde nuestras primeras salidas,  
+las citas en Cibeles,  
+los momentos improvisados,  
+hasta ese picnic donde intenté pintar contigo aunque me estrese…  
+
+Cada momento contigo vale completamente la pena.
+</p>
+</div>
+
+<div class="card">
+<h2>Tus fotos 💙</h2>
+
+<!-- AQUÍ PONES TUS FOTOS -->
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+
+</div>
+
+</div>
+
+<script>
+function entrar(){
+let p=document.getElementById("pass").value.toLowerCase();
+
+if(p=="midestinofueencontrarteaz" || p=="mi destino fue encontrarte az"){
+document.getElementById("login").style.display="none";
+document.getElementById("contenido").style.display="block";
+}else{
+document.getElementById("error").innerText="Contraseña incorrecta 💔";
+}
+}
+</script>
+
+</body>
+</html>
